@@ -1,0 +1,128 @@
+* {
+  font-family: roboto, serif;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, rgba(57, 140, 219, 0.9), rgba(72, 186, 171, 0.8)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  color: black;
+  margin: 2em 0;
+  background-attachment: fixed;
+
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#title {
+  color: white;
+  font-size: 3em;
+}
+
+#description {
+  font-size: 1.2em;
+  margin-top: 1em;
+  color: white;
+}
+
+
+#survey-form {
+  width: 60%;
+  margin: 1em auto;
+  background-color: white;
+  
+  padding: 1em;
+}
+
+.field:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.field__label {
+  font-size: 1.3em;
+}
+
+.field__input {
+  border: none;
+  border-bottom: 2px solid gray;
+  padding: 0.5em;
+  transition: all 0.2s;
+}
+
+.field__dropdown {
+  border: 1px solid gray;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  transition: all 0.2s;
+}
+
+.field__area {
+  border: 1px solid gray;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  transition: all 0.2s;
+  resize: none;
+  overflow: auto;
+}
+
+.field__input:focus, .field__dropdown:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.field__dropdown:focus {
+  border: 1px solid black;
+}
+
+.field__input, .field__radio, .field__checkbox {
+  margin-top: 0.5em;
+}
+
+.field__radio, .field__checkbox {
+  margin-right: 0.4em;
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+.field__submit {
+  display: block;
+  margin-left: auto;
+  padding: 1em;
+  width: 120px;
+  border: none;
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.field__submit:hover {
+  background-color: orange;
+}
+
+@media (max-width: 900px) {
+  
+  body {
+    font-size: 12px;
+  }
+  
+  .container {
+    width: 90%;
+  }
+  
+  #survey-form {
+    width: 100%;
+  }
+}
